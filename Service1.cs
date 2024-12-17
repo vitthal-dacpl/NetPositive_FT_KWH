@@ -445,7 +445,7 @@ namespace NetPositive_FT_KWH
             }
             catch (Exception ex)
             {
-                WriteToFile(ex.Message + " ReadNode " + " " + nodeID + " " + DateTime.Now.ToString());
+                WriteToFile(ex.Message.ToString() + " ReadNode " + " " + nodeID + " " + DateTime.Now.ToString());
 
                 return null;
             }
