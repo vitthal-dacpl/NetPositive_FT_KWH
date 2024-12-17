@@ -33,6 +33,7 @@ namespace NetPositive_FT_KWH
         #endregion
         public Service1()
         {
+        //Two Database redudancy
             connection1 = new SqlConnection(connectionString1);
             connection2 = new SqlConnection(connectionString2);
             bl = new BusinessLayer();
